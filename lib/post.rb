@@ -3,7 +3,7 @@ class Post
   @@all = []
   def initialize(title)
     @title = title
-    @name = @title
+    # @name = @title
     @@all << self
 
   end
@@ -16,6 +16,5 @@ class Post
       else
           @author.name
       end
-   
   end
 end
