@@ -11,6 +11,11 @@ class Post
     @@all
   end
   def author_name
-    @author.name
+    if defined?(@author.name) == nil
+          nil
+      else
+          @author.name
+      end
+   end
   end
 end
