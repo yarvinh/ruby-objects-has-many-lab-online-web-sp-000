@@ -5,7 +5,7 @@ class Author
     @posts = []
   end
   def posts
-    Post.all.map {|post| post.author == self}
+    Post.all.select {|post| post.author == self}
   end
 
 end
